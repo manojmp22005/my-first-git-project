@@ -122,3 +122,155 @@ Then reply:
 Done
 or
 I got this error: ___
+
+Topic 5 — Understanding Changes: status, diff, and log
+
+Now that you’ve made your first commit, it’s time to see what changes in your code and track history confidently.
+
+In this topic you’ll learn:
+
+How to check what changed
+
+How to see differences in files
+
+How to read commit history
+
+🔹 1. git status — your best friend
+
+Run this anytime:
+
+git status
+
+
+It tells you:
+
+What files changed
+
+What is staged
+
+What is not staged
+
+What is ready to commit
+
+Example output meaning
+Message	Meaning
+Untracked files	Git sees file but not tracking
+Changes not staged	File changed but not added
+Changes to be committed	Ready to save
+🔹 2. Make a small change
+
+Open hello.txt
+Add a new line:
+
+I am learning Git step by step.
+
+
+Save the file.
+
+Now run:
+
+git status
+
+
+You’ll see:
+
+modified: hello.txt
+
+🔹 3. See what exactly changed — git diff
+
+Run:
+
+git diff
+
+
+You’ll see something like:
+
++ I am learning Git step by step.
+
+Meaning
+
++ → new line added
+
+- → line removed
+
+This shows difference between last commit and now.
+
+🔹 4. Save the change
+git add hello.txt
+git commit -m "Update hello message"
+
+🔹 5. See history — git log
+git log
+
+
+Shows:
+
+All commits
+
+Who made them
+
+When
+
+With what message
+
+If log looks long, exit with:
+
+q
+
+⚠️ Common mistakes & fixes
+❌ Mistake 1: git diff shows nothing
+
+Reason: File already staged
+Fix:
+
+git diff --staged
+
+❌ Mistake 2: Forgot what you changed
+
+Fix:
+Always run:
+
+git status
+git diff
+
+
+before committing.
+
+❌ Mistake 3: Too many logs
+
+Fix:
+
+git log --oneline
+
+📝 Practice Task
+
+Do this now:
+
+Open hello.txt and add one more line
+
+Run:
+
+git status
+
+
+Run:
+
+git diff
+
+
+Save it:
+
+git add hello.txt
+git commit -m "Add second line"
+
+
+View history:
+
+git log --oneline
+
+
+Then reply:
+
+Done
+or
+I got this error: ___
