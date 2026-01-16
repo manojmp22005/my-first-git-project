@@ -1,0 +1,124 @@
+What is a Repository (Repo)?
+
+A repository is just:
+
+A normal folder that Git watches and tracks.
+
+Before Git:
+
+myProject/
+
+
+After Git:
+
+myProject/  ← Git tracks changes here
+
+🔹 Step 1: Create a project folder
+
+Go to Desktop
+
+Create a new folder
+
+Name it:
+
+my-first-git-project
+
+🔹 Step 2: Open this folder in Git Bash
+
+Right-click inside the folder
+
+Click Git Bash Here
+
+You will see a black terminal window.
+
+🔹 Step 3: Initialize Git
+
+Type this command:
+
+git init
+
+What this does
+
+It tells Git:
+
+“Start tracking this folder.”
+
+You will see:
+
+Initialized empty Git repository
+
+
+✅ Now this folder is a Git repository
+
+🔹 Step 4: Create your first file
+
+Inside the folder:
+
+Create a file called:
+
+hello.txt
+
+
+Open it and write:
+
+Hello, this is my first Git project!
+
+
+Save the file.
+
+🔹 Step 5: Check Git status
+
+Back in Git Bash, type:
+
+git status
+
+
+You will see something like:
+
+Untracked files:
+  hello.txt
+
+Meaning
+
+Git sees the file, but is not tracking it yet.
+
+⚠️ Common mistakes & fixes
+❌ Mistake 1: git init in wrong folder
+
+Fix:
+Go to correct folder and run git init again.
+
+❌ Mistake 2: Can’t see “Git Bash Here”
+
+Fix:
+Open Git Bash from Start Menu and use:
+
+cd Desktop/my-first-git-project
+
+📝 Practice Task
+
+Do this now:
+
+Create folder: my-first-git-project
+
+Open it in Git Bash
+
+Run:
+
+git init
+
+
+Create file: hello.txt
+
+Write something in it
+
+Run:
+
+git status
+
+
+Then reply:
+
+Done
+or
+I got this error: ___
