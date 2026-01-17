@@ -274,3 +274,7 @@ Then reply:
 Done
 or
 I got this error: ___
+
+
+####################
+Situation 3: You made a wrong commit message
